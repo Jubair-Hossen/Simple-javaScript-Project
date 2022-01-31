@@ -15,6 +15,43 @@ btn.addEventListener("click", function (e) {
     }
 });
 
+
+// fahrenheit to celsius
+
+var deyaTapmatra = document.querySelector("#deyaTapmatra");
+var jekaneResultBosbe = document.querySelector("#jekaneResultBosbe");
+var convertBtn = document.querySelector("#convertBtn");
+
+convertBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    var deyaTapmatraMan = parseInt(deyaTapmatra.value);
+    if (deyaTapmatra.value == "") {
+        jekaneResultBosbe.innerHTML = "Enter any Value";
+    }
+    else {
+        convertTapmatra = (deyaTapmatraMan - 32) * 5 / 9;
+        jekaneResultBosbe.innerHTML = convertTapmatra;
+
+    }
+})
+
+// profite calculation
+var amount = document.querySelector("#amount");
+var profite = document.querySelector("#profite");
+var profiteBtn = document.querySelector("#profiteBtn");
+
+profiteBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    var userAmount = parseInt(amount.value);
+    if (amount.value == "") {
+        profite.innerHTML = "Enter Amout";
+    }
+    else {
+        var userProfite = userAmount * 10 / 100;
+        profite.innerHTML = userProfite;
+    }
+})
+
 // grade calculation
 
 var number = document.querySelector("#number");

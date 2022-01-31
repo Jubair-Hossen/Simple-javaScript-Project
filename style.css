@@ -9,7 +9,7 @@ body{
 }
 .container{
     max-width: 1240px;
-    margin: 15px auto;
+    margin: 30px auto;
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -21,6 +21,7 @@ body{
     box-shadow: 2px 4px 10px rgba(128, 128, 128, 0.308);
     padding: 0 15px;
     border-radius: 5px;
+    border-top: 6px solid rgb(3, 3, 151);
 }
 .card h1{
     font-size: 28px;
@@ -56,6 +57,9 @@ body{
     color: whitesmoke;
     background-image: linear-gradient(to right, #ff00cc, #333399);
 
+}
+.card .result{
+    color: rgba(0, 0, 0, 0.719);
 }
 @media only screen and (max-width: 1000px){
     .container{
